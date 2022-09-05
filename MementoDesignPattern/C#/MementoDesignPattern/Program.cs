@@ -6,7 +6,8 @@ namespace MementoDesignPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IDocument Document = new Document();
+            
         }
     }
 }
