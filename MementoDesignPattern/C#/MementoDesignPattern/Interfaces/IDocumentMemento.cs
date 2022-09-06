@@ -6,5 +6,7 @@ namespace MementoDesignPattern
 {
     interface IDocumentMemento
     {
+        public IDocument GetDocument();
+        public DateTime GetDocumentSavingDateTime();
     }
 }

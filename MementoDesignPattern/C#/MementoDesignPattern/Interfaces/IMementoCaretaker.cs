@@ -6,5 +6,9 @@ namespace MementoDesignPattern
 {
     interface IMementoCaretaker
     {
+        public void Undo();
+        public void Redo();
+        public void Save();
+        public void ClearHistory();
     }
 }
