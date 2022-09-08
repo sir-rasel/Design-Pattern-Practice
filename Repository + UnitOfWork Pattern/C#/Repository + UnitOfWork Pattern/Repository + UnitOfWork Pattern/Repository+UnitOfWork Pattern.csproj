@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Repository___UnitOfWork_Pattern</RootNamespace>
+    <RootNamespace>Repository_UnitOfWork_Pattern</RootNamespace>
+    <AssemblyName>Repository+UnitOfWork Pattern</AssemblyName>
   </PropertyGroup>
 
 

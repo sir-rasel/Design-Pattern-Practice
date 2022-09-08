@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Repository___UnitOfWork_Pattern": {
+    "Repository_UnitOfWork_Pattern": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
