@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Repository_UnitOfWork_Pattern.src.Core.Application.RepositoryInterfaces
+namespace Repository_UnitOfWork_Pattern.src.Core.Application.Service
 {
-    public interface IGenericRepository<TEntity> where TEntity : class
+    interface ICommonService<TEntity> where TEntity : class
     {
         TEntity Get(int id);
         IEnumerable<TEntity> GetAll();

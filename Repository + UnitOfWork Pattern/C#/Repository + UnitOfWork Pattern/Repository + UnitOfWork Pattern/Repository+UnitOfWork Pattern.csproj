@@ -5,6 +5,5 @@
     <RootNamespace>Repository_UnitOfWork_Pattern</RootNamespace>
     <AssemblyName>Repository+UnitOfWork Pattern</AssemblyName>
   </PropertyGroup>
-
-
+	
 </Project>
