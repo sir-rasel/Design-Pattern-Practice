@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ObserverDesignPattern.Classes;
+using System;
 
 namespace ObserverDesignPattern
 {
@@ -6,7 +7,16 @@ namespace ObserverDesignPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DataSource DataSource = new DataSource();
+            ConcreteObserverA A = new ConcreteObserverA();
+            ConcreteObserverB B = new ConcreteObserverB(DataSource);
+
+            DataSource.Subscribe(A);
+            DataSource.Subscribe(B);
+            DataSource.SetStateValue(5);
+
+            DataSource.UnSubscribe(A);
+            DataSource.SetStateValue(10);
         }
     }
 }

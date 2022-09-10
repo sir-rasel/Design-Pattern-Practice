@@ -6,5 +6,6 @@ namespace ObserverDesignPattern.Interfaces
 {
     interface IDataSource
     {
+        public int GetStateValue();
     }
 }
