@@ -6,5 +6,7 @@ namespace MediatorPatternUsingObserverPattern.Interfaces
 {
     interface ISubject
     {
+        void Attach(HandleEvent eventHandler);
+        void NotifyEventHandlers();
     }
 }

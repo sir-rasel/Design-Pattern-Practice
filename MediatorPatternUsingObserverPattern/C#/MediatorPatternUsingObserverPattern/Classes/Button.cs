@@ -4,7 +4,18 @@ using System.Text;
 
 namespace MediatorPatternUsingObserverPattern.Classes
 {
-    class Button
+    class Button : UIControl
     {
+        private bool IsEnabled { get; set; }
+        public bool CheckIsEnabled()
+        {
+            return IsEnabled;
+        }
+
+        public void SetEnabled(bool enabled)
+        {
+            IsEnabled = enabled;
+            NotifyEventHandlers();
+        }
     }
 }

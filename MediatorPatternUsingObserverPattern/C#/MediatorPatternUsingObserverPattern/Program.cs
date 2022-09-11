@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediatorPatternUsingObserverPattern.Classes;
+using System;
 
 namespace MediatorPatternUsingObserverPattern
 {
@@ -6,7 +7,8 @@ namespace MediatorPatternUsingObserverPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DialogBox dialogBox = new DialogBox();
+            dialogBox.SimulateUserInteraction();
         }
     }
 }
