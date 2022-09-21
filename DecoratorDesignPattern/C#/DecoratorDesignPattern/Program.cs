@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DecoratorDesignPattern.Classes;
+using DecoratorDesignPattern.Interfaces;
+using System;
 
 namespace DecoratorDesignPattern
 {
@@ -6,7 +8,13 @@ namespace DecoratorDesignPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            INotifier notifyAll = new FacebookNotifierDecorator(new WhatsAppNotifierDecorator(new EmailNotifier("SIR")));
+            notifyAll.Send("Like and Subscribe!!!");
+
+            Console.WriteLine("==========================================");
+
+            INotifier notifyFbMail = new FacebookNotifierDecorator(new EmailNotifier("sir"));
+            notifyFbMail.Send("Like and Subscribe!!!");
         }
     }
 }
